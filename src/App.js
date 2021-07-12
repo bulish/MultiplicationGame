@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import {gsap} from 'gsap';
+import './styles.scss';
+import MainPage from './components/mainPage/mainPage';
+import Field from './components/field/field';
+import data from './data.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [questions, setQuestions] = useState(data());
+	return (
+		<div>
+			<MainPage />
+			<Field questions={questions} setQuestions={setQuestions} />
+		</div>
+	);
 }
 
 export default App;

@@ -1,0 +1,55 @@
+.field {
+    background: #CAAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateX(100vw);
+    .title {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        font-size: clamp(1rem, 1.3vw, 3.5rem);
+        color: #5D73C0;
+        margin-bottom: 3rem;
+        cursor: pointer;
+    }
+    &__container {
+        font-size: clamp(1.25rem, 1.5vw, 4rem);
+        text-align: center;
+        &__question {
+            font-size: clamp(3rem, 4vw, 6.75rem);
+            color: #5D73C0;
+            margin-bottom: 3rem;
+        }
+        &__input {
+            border: 1px solid rgb(129, 122, 122);
+            padding: 0.5rem;
+            font-size: clamp(1.1rem, 1.1vw, 3rem);
+            margin: 2rem 1rem 3rem 1rem;
+            width: calc(6rem + 6vw);
+        }
+        &__button {
+            padding: 0.5rem 1rem;
+            background-color: #5D73C0;
+            width: fit-content;
+            margin: auto;
+            cursor: pointer;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .count {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: clamp(1.4rem, 1.5vw, 4.5rem);
+    }
+    .score {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        font-size: clamp(1.4rem, 1.5vw, 4.5rem);
+    }
+}

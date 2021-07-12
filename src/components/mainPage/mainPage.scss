@@ -1,0 +1,27 @@
+.mainPage {
+    background: #CAAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+    &__container {
+        font-size: clamp(1.25rem, 1.5vw, 4rem);
+        text-align: center;
+        &__title {
+            font-size: clamp(3rem, 4vw, 6.75rem);
+            color: #5D73C0;
+            margin-bottom: 3rem;
+        }
+        &__button {
+            padding: 0.5rem 1rem;
+            background-color: #5D73C0;
+            width: fit-content;
+            margin: auto;
+            cursor: pointer;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
